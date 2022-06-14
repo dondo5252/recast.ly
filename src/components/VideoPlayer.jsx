@@ -1,4 +1,11 @@
-var VideoPlayer = () => (
+// I believe here we have to pass in the parameter props
+// so when videoPlayer gets called, it will have the correct
+// object passed in as an argument
+
+// once we figure out what to pass in...
+// I think we also need to import this file into the App.jsx file
+var VideoPlayer = (props) => (
+  {console.log(props)}
   <div className="video-player">
     <div className="embed-responsive embed-responsive-16by9">
       <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" allowFullScreen></iframe>
