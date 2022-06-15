@@ -6,8 +6,9 @@ var VideoList = (props) => (
     {props.videos.map((video, index) =>
       <VideoListEntry key={index} video= {video}/>
     )}
+
   </div>
-  // used index as key https://reactjs.org/docs/lists-and-keys.html#keys
+
 
 );
 
